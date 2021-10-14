@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "816248548862",
+    "project_id": "tieraaapp",
+    "storage_bucket": "tieraaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816248548862:android:a09c8184c1838d9733a4af",
+        "android_client_info": {
+          "package_name": "com.victoria.tierra_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816248548862-630d9c3d0keee6u80nfd8tbk5dj3mlbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victoria.tierra_app",
+            "certificate_hash": "26d6c4608c0fc5ba863e969a1fe728196ec0253e"
+          }
+        },
+        {
+          "client_id": "816248548862-nosvipud6ogleldnclcbd04d2sddsod5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAsZhfiP9cA9gdsMg4z5ibg7ATyYuhIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816248548862-nosvipud6ogleldnclcbd04d2sddsod5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
