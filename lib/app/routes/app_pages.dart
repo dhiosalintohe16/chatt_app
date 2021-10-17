@@ -4,6 +4,8 @@ import 'package:tierra_app/app/modules/home/bindings/home_binding.dart';
 import 'package:tierra_app/app/modules/home/views/home_view.dart';
 import 'package:tierra_app/app/modules/intoduction/bindings/intoduction_binding.dart';
 import 'package:tierra_app/app/modules/intoduction/views/intoduction_view.dart';
+import 'package:tierra_app/app/modules/komunitas/bindings/komunitas_binding.dart';
+import 'package:tierra_app/app/modules/komunitas/views/komunitas_view.dart';
 import 'package:tierra_app/app/modules/login/bindings/login_binding.dart';
 import 'package:tierra_app/app/modules/login/views/login_view.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.KOMUNITAS,
+      page: () => KomunitasView(),
+      binding: KomunitasBinding(),
     ),
   ];
 }

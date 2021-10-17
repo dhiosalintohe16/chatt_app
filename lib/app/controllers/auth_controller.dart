@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:tierra_app/app/routes/app_pages.dart';
@@ -14,7 +15,6 @@ class AuthController extends GetxController {
   UserCredential? userCredential;
 
   Future<void> loginGoogle() async {
-       
     try {
       //ini untuk menghandle kebocoran data user sebelum login
       await _googleSignIn.signOut();
@@ -26,7 +26,7 @@ class AuthController extends GetxController {
       //mengecek status login
       final isSignIn = await _googleSignIn.isSignedIn();
 
-      if(isSignIn) {
+      if (isSignIn) {
         //kondisi login berhasil
         print("Login berhasil");
         print(currentUser);
@@ -39,17 +39,24 @@ class AuthController extends GetxController {
         );
 
         // simpan di firebase
-        await FirebaseAuth.instance.signInWithCredential(credential).
-        then((value) => userCredential = value);
+        await FirebaseAuth.instance
+            .signInWithCredential(credential)
+            .then((value) => userCredential = value);
 
         print("User Credential");
         print(userCredential);
 
-        isAuth.value=true;
-        Get.offAllNamed( Routes.HOME);
-
+        isAuth.value = true;
+        Get.offAllNamed(Routes.HOME);
       }
     } catch (error) {
+      Get.defaultDialog(
+          title: "Terjadi Kesalahan",
+          titleStyle: TextStyle(
+            fontWeight: FontWeight.bold),
+          middleText: "Tidak dapa login, Silakan coba kembali",
+          middleTextStyle: TextStyle(
+            fontWeight: FontWeight.bold));
       print(error);
     }
   }
@@ -66,7 +73,7 @@ class AuthController extends GetxController {
       //mengecek status login
       final isSignIn = await _googleSignIn.isSignedIn();
 
-      if(isSignIn) {
+      if (isSignIn) {
         //kondisi login berhasil
         print("Login berhasil");
         print(currentUser);
@@ -79,15 +86,15 @@ class AuthController extends GetxController {
         );
 
         // simpan di firebase
-        await FirebaseAuth.instance.signInWithCredential(credential).
-        then((value) => userCredential = value);
+        await FirebaseAuth.instance
+            .signInWithCredential(credential)
+            .then((value) => userCredential = value);
 
         print("User Credential");
         print(userCredential);
 
-        isAuth.value=true;
-        Get.offAllNamed( Routes.HOME);
-
+        isAuth.value = true;
+        Get.offAllNamed(Routes.HOME);
       }
     } catch (error) {
       print(error);

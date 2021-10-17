@@ -34,30 +34,31 @@ class MyApp extends StatelessWidget {
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
 
-            // return GetMaterialApp(
-            //   initialRoute: Routes.HOME,
-            // );
+            return GetMaterialApp(
+              initialRoute: Routes.KOMUNITAS,
+              getPages: AppPages.routes,
+            );
           
-          return FutureBuilder(
-            future: Future.delayed(Duration(seconds: 5)),
-            builder: (context, snapshot){
-              if (snapshot.connectionState == ConnectionState.done) {
-                return Obx(() => GetMaterialApp(
-                  debugShowCheckedModeBanner: false,
-                  title: "Komunitas",
-                  initialRoute: authc.isSkipIntro.isTrue ?
-                    authc.isAuth.isTrue ? 
-                    Routes.HOME 
-                    :  Routes.LOGIN 
-                  : Routes.INTODUCTION ,
-                  getPages: AppPages.routes,
-                 )
-               );
-              }
+          // return FutureBuilder(
+          //   future: Future.delayed(Duration(seconds: 5)),
+          //   builder: (context, snapshot){
+          //     if (snapshot.connectionState == ConnectionState.done) {
+          //       return Obx(() => GetMaterialApp(
+          //         debugShowCheckedModeBanner: false,
+          //         title: "Komunitas",
+          //         initialRoute: authc.isSkipIntro.isTrue ?
+          //           authc.isAuth.isTrue ? 
+          //           Routes.HOME 
+          //           :  Routes.LOGIN 
+          //         : Routes.INTODUCTION ,
+          //         getPages: AppPages.routes,
+          //        )
+          //      );
+          //     }
 
-              return SplashScreen();
+          //     return SplashScreen();
 
-          });
+          // });
           
         }
 

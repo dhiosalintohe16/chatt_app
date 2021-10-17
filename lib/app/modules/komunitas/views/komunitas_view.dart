@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/home_controller.dart';
+import '../controllers/komunitas_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class KomunitasView extends GetView<KomunitasController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
