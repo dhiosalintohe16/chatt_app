@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
-import 'package:tierra_app/main.dart';
+
 
 class SplashScreen extends StatelessWidget {
  
@@ -20,7 +19,7 @@ class SplashScreen extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 100),
+                padding: const EdgeInsets.symmetric(vertical : 50),
                 child: Container(
                   width: Get.width * 0.7,
                   height: Get.height * 0.68,

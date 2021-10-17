@@ -21,7 +21,8 @@ class IntoductionView extends GetView<IntoductionController> {
                 width: Get.width * 0.5,
                 height: Get.height * 0.5,
                 child: Center(
-                  child: Image.asset("assets/logo/ss.png", height: 175.0),
+                  child: Image.asset("assets/logo/ss.png", 
+                  height: Get.height * 1),
                 ),
               ),
             ),
@@ -32,7 +33,7 @@ class IntoductionView extends GetView<IntoductionController> {
                 width: Get.width * 0.6,
                 height: Get.height * 0.6,
                 child: Center(
-                  child: Image.asset("assets/logo/ss.png", height: 175.0),
+                  child: Image.asset("assets/logo/ss.png", height: Get.height * 1.75),
                 ),
               ),
             ),

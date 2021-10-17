@@ -14,6 +14,7 @@ class AuthController extends GetxController {
   UserCredential? userCredential;
 
   Future<void> loginGoogle() async {
+       
     try {
       //ini untuk menghandle kebocoran data user sebelum login
       await _googleSignIn.signOut();

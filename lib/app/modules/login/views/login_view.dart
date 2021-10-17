@@ -4,6 +4,7 @@ import 'package:flutter/painting.dart';
 
 import 'package:get/get.dart';
 import 'package:tierra_app/app/controllers/auth_controller.dart';
+import 'package:tierra_app/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 

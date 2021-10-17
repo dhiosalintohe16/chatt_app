@@ -7,6 +7,7 @@ import 'package:tierra_app/app/utils/errorpage.dart';
 import 'package:tierra_app/app/utils/loadingpage.dart';
 import 'package:tierra_app/app/utils/splashscreen.dart';
 
+
 import 'app/routes/app_pages.dart';
 
 void main() {
@@ -32,11 +33,11 @@ class MyApp extends StatelessWidget {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          // return GetMaterialApp(
-          //     initialRoute: Routes.INTODUCTION,
-          //     getPages: AppPages.routes,
-          // );
 
+            // return GetMaterialApp(
+            //   initialRoute: Routes.HOME,
+            // );
+          
           return FutureBuilder(
             future: Future.delayed(Duration(seconds: 5)),
             builder: (context, snapshot){
