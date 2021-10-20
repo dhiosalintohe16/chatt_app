@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:tierra_app/app/modules/chat_room/bindings/chat_room_binding.dart';
+import 'package:tierra_app/app/modules/chat_room/views/chat_room_view.dart';
 import 'package:tierra_app/app/modules/home/bindings/home_binding.dart';
 import 'package:tierra_app/app/modules/home/views/home_view.dart';
 import 'package:tierra_app/app/modules/intoduction/bindings/intoduction_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.KOMUNITAS,
       page: () => KomunitasView(),
       binding: KomunitasBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHAT_ROOM,
+      page: () => ChatRoomView(),
+      binding: ChatRoomBinding(),
     ),
   ];
 }

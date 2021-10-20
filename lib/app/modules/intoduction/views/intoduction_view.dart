@@ -11,48 +11,48 @@ class IntoductionView extends GetView<IntoductionController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.red[800],
         body: IntroductionScreen(
-          pages: [
-            PageViewModel(
-              title: 'Welcome to TIERRA',
-              body: "Mati tanam jadi bunga",
-              image: Container(
-                width: Get.width * 0.5,
-                height: Get.height * 0.5,
-                child: Center(
-                  child: Image.asset("assets/logo/ss.png", 
-                  height: Get.height * 1),
-                ),
-              ),
+      pages: [
+        PageViewModel(
+          title: 'Welcome to TIERRA',
+          body: "Mati tanam jadi bunga",
+          image: Container(
+            color: Colors.amber,
+            width: Get.width * 0.6,
+            height: Get.height * 0.6,
+            child: Center(
+              child:
+                  Image.asset("assets/logo/ss.png", height: Get.height * 1.75),
             ),
-            PageViewModel(
-              title: "Temukan teman anda",
-              body: "Perbanyak teman anda karna satu msuh terlalu sedikit",
-              image: Container(
-                width: Get.width * 0.6,
-                height: Get.height * 0.6,
-                child: Center(
-                  child: Image.asset("assets/logo/ss.png", height: Get.height * 1.75),
-                ),
-              ),
+          ),
+        ),
+        PageViewModel(
+          title: "Temukan teman anda",
+          body: "Perbanyak teman anda karna satu msuh terlalu sedikit",
+          image: Container(
+            width: Get.width * 0.6,
+            height: Get.height * 0.6,
+            child: Center(
+              child:
+                  Image.asset("assets/logo/ss.png", height: Get.height * 1.75),
             ),
-          ],
-          onDone: () => Get.offAllNamed(Routes.LOGIN),
-          onSkip: () => Get.offAllNamed(Routes.LOGIN),
-          // When done button is press
+          ),
+        ),
+      ],
+      onDone: () => Get.offAllNamed(Routes.LOGIN),
+      onSkip: () => Get.offAllNamed(Routes.LOGIN),
+      // When done button is press
 
-          showSkipButton: true,
-          skip: Text(
-            "Skip",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          next: Text(
-            "Next",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          done:
-              const Text("Done", style: TextStyle(fontWeight: FontWeight.w600)),
-        ));
+      showSkipButton: true,
+      skip: Text(
+        "Skip",
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
+      next: Text(
+        "Next",
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
+      done: const Text("Done", style: TextStyle(fontWeight: FontWeight.w600)),
+    ));
   }
 }

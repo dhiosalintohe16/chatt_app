@@ -8,6 +8,7 @@ abstract class Routes {
   static const INTODUCTION = _Paths.INTODUCTION;
   static const LOGIN = _Paths.LOGIN;
   static const KOMUNITAS = _Paths.KOMUNITAS;
+  static const CHAT_ROOM = _Paths.CHAT_ROOM;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const INTODUCTION = '/intoduction';
   static const LOGIN = '/login';
   static const KOMUNITAS = '/komunitas';
+  static const CHAT_ROOM = '/chat-room';
 }
